@@ -14,8 +14,8 @@ class CategoryMeals extends StatelessWidget {
           category.title,
         ),
       ),
-      body: Center(
-        child: Text('Receitas'),
+      body: const Center(
+        child: Text('Receitas por categoria'),
       ),
     );
   }
