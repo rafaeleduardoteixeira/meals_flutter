@@ -31,4 +31,32 @@ class Meal {
     required this.complexity,
     required this.cost,
   });
+
+  String get complexityText {
+    switch (complexity) {
+      case Complexity.Simple:
+        return 'Simple';
+      case Complexity.Medium:
+        return 'Medium';
+      case Complexity.Difficult:
+        return 'Difficult';
+      default:
+        'Unknow';
+    }
+    return 'Unknow';
+  }
+
+  String get costText {
+    switch (cost) {
+      case Cost.Cheap:
+        return 'Cheap';
+      case Cost.Fair:
+        return 'Fair';
+      case Cost.Expensive:
+        return 'Expensive';
+      default:
+        'Unknow';
+    }
+    return 'Unknow';
+  }
 }
