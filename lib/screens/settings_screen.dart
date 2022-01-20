@@ -12,7 +12,7 @@ class SettingsScreen extends StatelessWidget {
       ),
       drawer: MainDrawer(),
       body: Center(
-        child: Text('Configurações'),
+        child: Text('Configurações.'),
       ),
     );
   }
