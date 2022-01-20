@@ -8,10 +8,14 @@ class MealComponent extends StatelessWidget {
   const MealComponent(this.meal, [Key? key]) : super(key: key);
 
   void _selectMeal(context) {
-    Navigator.of(context).pushNamed(
+    Navigator.of(context)
+        .pushNamed(
       AppRoutes.MEAL,
       arguments: meal,
-    );
+    )
+        .then((result) {
+      if (result != null) {}
+    });
   }
 
   @override
